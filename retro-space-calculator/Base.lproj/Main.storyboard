@@ -204,8 +204,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4,886" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9le-tK-W3L">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4,886" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9le-tK-W3L">
                                 <rect key="frame" x="192" y="145" width="216" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Qwr-jM-uZi"/>
+                                    <constraint firstAttribute="width" constant="216" id="j5V-La-ife"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -213,6 +217,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MtI-Ru-1DK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0oE-Xe-J33"/>
+                            <constraint firstItem="HLg-io-zPx" firstAttribute="trailing" secondItem="9le-tK-W3L" secondAttribute="trailing" constant="10" id="BOU-jb-ilS"/>
                             <constraint firstItem="5hE-hb-BER" firstAttribute="centerX" secondItem="HLg-io-zPx" secondAttribute="centerX" id="Fy0-ty-Mt7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gai-3h-eHf" secondAttribute="bottom" id="YtV-dl-0bR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MtI-Ru-1DK" secondAttribute="bottom" id="ZkP-Gj-yLc"/>
@@ -220,6 +225,7 @@
                             <constraint firstItem="HLg-io-zPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bkE-pu-Ipf"/>
                             <constraint firstItem="MtI-Ru-1DK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iec-Xv-7Yh"/>
                             <constraint firstItem="5hE-hb-BER" firstAttribute="centerY" secondItem="HLg-io-zPx" secondAttribute="centerY" constant="35" id="lqM-32-P3B"/>
+                            <constraint firstItem="9le-tK-W3L" firstAttribute="top" secondItem="HLg-io-zPx" secondAttribute="top" constant="18" id="oBZ-Us-Mxd"/>
                             <constraint firstItem="HLg-io-zPx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rNT-Ir-qCf"/>
                         </constraints>
                     </view>

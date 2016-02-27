@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HLg-io-zPx">
-                                <rect key="frame" x="178" y="128" width="244" height="444"/>
+                                <rect key="frame" x="178" y="40" width="244" height="502"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="cS4-2A-EYo">
                                         <rect key="frame" x="0.0" y="0.0" width="244" height="67"/>
@@ -45,17 +45,17 @@
                                             <constraint firstAttribute="height" constant="67" id="tYf-iE-2Fk"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="D0v-8z-Cum">
-                                        <rect key="frame" x="0.0" y="67" width="244" height="377"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="D0v-8z-Cum">
+                                        <rect key="frame" x="0.0" y="67" width="244" height="435"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="244" id="V5g-D7-xEw"/>
-                                            <constraint firstAttribute="height" constant="377" id="qbz-jg-kSa"/>
+                                            <constraint firstAttribute="height" constant="435" id="qbz-jg-kSa"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5hE-hb-BER">
-                                <rect key="frame" x="193" y="217" width="213" height="335"/>
+                                <rect key="frame" x="193" y="118" width="213" height="403"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vcq-Il-yet">
                                         <rect key="frame" x="0.0" y="0.0" width="213" height="63"/>
@@ -247,10 +247,21 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1Z-Dm-Gw4">
+                                        <rect key="frame" x="0.0" y="340" width="213" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="bnP-qs-EQ2"/>
+                                            <constraint firstAttribute="width" constant="213" id="iLa-kf-ZYZ"/>
+                                        </constraints>
+                                        <state key="normal" image="clear"/>
+                                        <connections>
+                                            <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gt8-tC-XMF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9le-tK-W3L">
-                                <rect key="frame" x="192" y="145" width="216" height="37"/>
+                                <rect key="frame" x="192" y="58" width="216" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="Qwr-jM-uZi"/>
                                     <constraint firstAttribute="width" constant="216" id="j5V-La-ife"/>
@@ -261,17 +272,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HLg-io-zPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0DJ-lp-FNl"/>
                             <constraint firstItem="MtI-Ru-1DK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0oE-Xe-J33"/>
+                            <constraint firstItem="5hE-hb-BER" firstAttribute="centerY" secondItem="HLg-io-zPx" secondAttribute="centerY" constant="35" id="5px-Jv-9vz"/>
+                            <constraint firstItem="5hE-hb-BER" firstAttribute="centerX" secondItem="HLg-io-zPx" secondAttribute="centerX" id="9IG-TP-8lR"/>
                             <constraint firstItem="HLg-io-zPx" firstAttribute="trailing" secondItem="9le-tK-W3L" secondAttribute="trailing" constant="10" id="BOU-jb-ilS"/>
-                            <constraint firstItem="5hE-hb-BER" firstAttribute="centerX" secondItem="HLg-io-zPx" secondAttribute="centerX" id="Fy0-ty-Mt7"/>
+                            <constraint firstItem="HLg-io-zPx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BZc-hS-yQH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gai-3h-eHf" secondAttribute="bottom" id="YtV-dl-0bR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MtI-Ru-1DK" secondAttribute="bottom" id="ZkP-Gj-yLc"/>
                             <constraint firstAttribute="trailing" secondItem="MtI-Ru-1DK" secondAttribute="trailing" id="adW-AA-ubL"/>
-                            <constraint firstItem="HLg-io-zPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bkE-pu-Ipf"/>
                             <constraint firstItem="MtI-Ru-1DK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iec-Xv-7Yh"/>
-                            <constraint firstItem="5hE-hb-BER" firstAttribute="centerY" secondItem="HLg-io-zPx" secondAttribute="centerY" constant="35" id="lqM-32-P3B"/>
                             <constraint firstItem="9le-tK-W3L" firstAttribute="top" secondItem="HLg-io-zPx" secondAttribute="top" constant="18" id="oBZ-Us-Mxd"/>
-                            <constraint firstItem="HLg-io-zPx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rNT-Ir-qCf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -296,6 +307,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
